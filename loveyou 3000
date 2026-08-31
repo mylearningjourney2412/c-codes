@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+	int n=3000;
+	
+	for (int i = 0; i < n; i++) {
+	    printf("i love you %d\n",i+1);
+	}
+
+	return 0;
+}
