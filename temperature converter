@@ -1,0 +1,37 @@
+#include <stdio.h>
+float convert(float C);
+float convertCF(float C) {
+	return (C*1.8)+32;
+}
+float convertFC(float F){
+    return (F-32)/1.8;
+}
+
+
+
+int main()
+{
+    float C;
+    float F;
+    int a;
+    do{
+    printf("type 1 if want to convert f->c\ntype 2 if want to convert c->f\n");
+    scanf("%d",&a);
+    if(a==1){
+	printf("enter degree in fahrenheit:");
+	scanf("%f",&C);
+	printf("degree in fahrenheit is: %.2f\n",convertFC(F));
+    }
+    else if(a==2){
+        printf("enter degree in celcius:\n");
+        scanf("%f",&F);
+        printf("degree in celcius is: %.2f\n",convertCF(C));
+        
+    }
+    else{
+        printf("not a valid output\n");
+    };
+}while(a!=1&&2);
+
+	return 0;
+}
